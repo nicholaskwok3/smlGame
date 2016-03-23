@@ -476,13 +476,14 @@
 	}
 
 		ol li {
-			padding-left: 0.25em;
+			padding-left: 5em;
 		}
 
 	ul {
 		list-style: disc;
 		margin: 0 0 1.5em 0;
 		padding-left: 1em;
+		text-align:center;
 	}
 
 		ul li {
@@ -527,8 +528,8 @@
 					line-height: 3.75em;
 					overflow: hidden;
 					text-align: center;
-					text-indent: 3.75em;
 					white-space: nowrap;
+					text-align:center;
 				}
 
 					ul.icons li a:before {
@@ -700,6 +701,30 @@
 
 /* Main */
 
+	#levelplay {
+		position: relative;
+		max-width: 100%;
+		min-width: 80em;
+		padding: 9em 9em 9em 9em ;
+		background: #ffffff;
+		border-radius: 4px;
+		cursor: default;
+		opacity: 0.95;
+		text-align: center;
+		-moz-transform-origin: 50% 50%;
+		-webkit-transform-origin: 50% 50%;
+		-ms-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		-moz-transform: rotateX(0deg);
+		-webkit-transform: rotateX(0deg);
+		-ms-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+		transition: opacity 1s ease, transform 1s ease;
+	}
+
 	#main {
 		position: relative;
 		max-width: 100%;
@@ -776,7 +801,7 @@
 		position: relative;
 		max-width: 100%;
 		min-width: 10em;
-		padding: 1em 1em 1em 1em ;
+		padding: 0.0001em 0.0001em 0.0001em 0.0001em ;
 		background: #ffffff;
 		border-radius: 4px;
 		cursor: default;

@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="file:///Users/s200113/Library/Mobile%20Documents/com~apple~CloudDocs/Grade%208/SML/html5up-identity/smlGame/assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -21,10 +21,10 @@
 			<div id="wrapper">
 
 				<!-- Main -->
-					<section id="main">
+					<section id="levelplay">
 						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h2>Mathematics Game</h2>
+							<h1>Level 1</h1>
+							<p>Nicholas Kwok</p>							
 						</header>
 						<!--
 						<hr />
@@ -65,10 +65,34 @@
 						-->
 						<footer>
 							<ul class="icons">
-								<li><a href="level/level1.html" id="levelselect">Level 1</a></li>
-								<li><a href="level/level2.html" id="levelselect">Level 2</a></li>
-								<li><a href="level/level3.html" id="levelselect">Level 3</a></li>
-							</ul>
+								<button id="levelselect" value="click" id="myHeader" onclick="myFunction(); secondFunction()"/>Generate Question</button>	
+								<button id="levelselect" id="myHeader2" value="click" onclick="myFunction(); thirdFunction()"/>Add</button>
+								<h1 id="myHeader" onclick="myFunction()">generate</h1>															
+						<script type="text/javascript">
+								function myFunction() {
+    								var x=document.getElementById("myHeader")
+   									 x.innerHTML = Math.floor((Math.random() * 20) + 1);
+										}
+
+
+									function secondFunction() {
+									    var x = document.getElementById("myHeader2")
+									    x.innerHTML = Math.floor((Math.random() * 20) + 1);
+									}
+
+									 function myFunction2() {
+
+									 		var x = document.getElementById("output2").value;
+											var y = document.getElementById("output1").value;
+											var z = parseInt(x) + parseInt(y);
+										
+										 $("#equation").html(x + " + " + y + "= " + z );
+									        document.getElementById("demo").innerHTML = x;
+									      }
+
+
+</script>
+						</ul>
 						</footer>
 					</section>
 
