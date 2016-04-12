@@ -63,20 +63,37 @@
 						</form>
 						<hr />
 						-->
-						<footer>
+						
 							<ul class="icons">
-								<button id="levelselect" value="click" id="myHeader" onclick="myFunction(); secondFunction()"/>Generate Question</button>	
-								<button id="levelselect" id="myHeader2" value="click" onclick="myFunction(); thirdFunction()"/>Add</button>
-								<h1 id="myHeader" onclick="myFunction()">generate</h1>															
+								<button onclick="numberFunction(); number2Function();">Generate Question</button>
+<h1 id="demo"></h1>
+<h1>+</h1>
+<h1 id="demo2"></h1>
+
+<script>
+function numberFunction() {
+    var x = document.getElementById("demo")
+    x.innerHTML = Math.floor((Math.random() * 20) + 1);
+}
+
+function number2Function() {
+    var x = document.getElementById("demo2")
+    x.innerHTML = Math.floor((Math.random() * 20) + 1);
+}
+
+</script>
+								<h1 id="demo"></h1>
+								<h1 id="output2"></h1>
+																							
 						<script type="text/javascript">
 								function myFunction() {
-    								var x=document.getElementById("myHeader")
+    								var x=document.getElementById("demo")
    									 x.innerHTML = Math.floor((Math.random() * 20) + 1);
 										}
 
 
 									function secondFunction() {
-									    var x = document.getElementById("myHeader2")
+									    var x = document.getElementById("myHeader")
 									    x.innerHTML = Math.floor((Math.random() * 20) + 1);
 									}
 
@@ -86,9 +103,6 @@
 											var y = document.getElementById("output1").value;
 											var z = parseInt(x) + parseInt(y);
 										
-										 $("#equation").html(x + " + " + y + "= " + z );
-									        document.getElementById("demo").innerHTML = x;
-									      }
 
 
 </script>
